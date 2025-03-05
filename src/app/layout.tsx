@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { Montagu_Slab } from "next/font/google";
 import "./globals.css";
 
-// Import font dengan benar
+
 const montaguSlab = Montagu_Slab({
   subsets: ["latin"],
   variable: "--font-montagu-slab",
-  weight: ["400"], // Sesuaikan dengan kebutuhan (400, 700, dll.)
+  weight: ["400"], 
 });
 
 export const metadata: Metadata = {

@@ -1,5 +1,6 @@
 import { Button } from "../ui/button";
 import Image from "next/image";
+import { ShoppingBag } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 export default function hero() {
   return (
@@ -14,6 +15,17 @@ export default function hero() {
       <div className="flex gap-8 items-center justify-center w-screen">
         <Button className="mt-8 text-lg shadow-lg rounded-full p-5 px-8 font-semibold bg-[#C5BAB0] text-black">Product</Button>
         <Button className="mt-8 text-lg shadow-lg rounded-full p-5 px-8 font-semibold bg-[#34333A]">Contact</Button>
+      </div>
+      <div className="button-shp absolute bottom-[5%] right-[5%]">
+        <Button className=" text-3xl shadow-lg rounded-2xl p-10 px-8 font-semibold bg-[#34333A]">
+          <ShoppingBag size={128} /> Buy Now
+        </Button>
+      </div>
+      <div className="name-product absolute top-[30%] left-[4%] ">
+        <h1 className="font-extrabold text-5xl">SeSAJEN : </h1>
+        <h1 className="font-extrabold text-3xl">BodyScrub Natural Exfolian</h1>
+        <p className="mt-3 text-lg">250 ml</p>
+        <h1 className="font-extrabold text-6xl mt-4">Rp.22.000</h1>
       </div>
       <div className="flex justify-center mt-12">
         <h1 className="font-bold text-4xl">SEMERU SCRUB ASLI JAWA EKSFOLIASI NATURAL</h1>
