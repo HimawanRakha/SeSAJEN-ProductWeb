@@ -2,24 +2,24 @@ import { CircleUser } from "lucide-react";
 import { Star } from "lucide-react";
 export default function reviewchild() {
   return (
-    <div>
-      <div className="container mx-auto flex flex-col justify-center items-center mt-30 pb-32">
-        <div className="relative max-w-4xl w-full">
-          <h1 className="text-xl font-extrabold text-center">"SUPER SUPER BIG INNOVATION AND AWESOME PRODUCT"</h1>
-
-          <div className="absolute -bottom-14 w-full flex justify-between items-center mt-16">
-            <div className="flex items-center gap-4">
-              <CircleUser size={32} />
-              <h1 className="text-xl font-medium">himawanrkh***@gmail.com</h1>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <Star size={32} fill="#FFD700" />
-              <Star size={32} fill="#FFD700" />
-              <Star size={32} fill="#FFD700" />
-              <Star size={32} fill="#FFD700" />
-              <Star size={32} fill="#FFD700" />
-            </div>
+    <div className="flex justify-center items-center ">
+      <div className="flex gap-[20px] flex-wrap flex-row justify-start w-[333px] h-[176px] rounded-lg border-1 border-black p-5 ">
+        <div className="grow">
+          <div className="flex items-center gap-4">
+            <CircleUser size={24} />
+            <h1 className="text-sm font-medium">himawanrkh***@gmail.com</h1>
+          </div>
+        </div>
+        <div className="w-full ">
+          <h1> “This product is very safe and very effective and can provide real changes”</h1>
+        </div>
+        <div className="w-full self-start">
+          <div className="flex items-center gap-2 justify-end">
+            <Star size={24} fill="#FFD700" />
+            <Star size={24} fill="#FFD700" />
+            <Star size={24} fill="#FFD700" />
+            <Star size={24} fill="#FFD700" />
+            <Star size={24} fill="#FFD700" />
           </div>
         </div>
       </div>
