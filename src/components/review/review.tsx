@@ -13,11 +13,9 @@ export default function review() {
           </div>
 
           <div className="flex items-center gap-2">
-            <Star size={32} fill="#FFD700" />
-            <Star size={32} fill="#FFD700" />
-            <Star size={32} fill="#FFD700" />
-            <Star size={32} fill="#FFD700" />
-            <Star size={32} fill="#FFD700" />
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} size={32} fill="#FFD700" stroke="none" />
+            ))}
           </div>
         </div>
       </div>
