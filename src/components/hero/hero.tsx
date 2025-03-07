@@ -4,6 +4,8 @@ import { ShoppingBag } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import TagProductLeft from "./tagproductl";
 import TagProductRight from "./tagproductr";
+import { ShoppingCart } from "lucide-react";
+import ChartIcon from "./charticon";
 
 export default function Hero() {
   return (
@@ -26,23 +28,28 @@ export default function Hero() {
         <div className="w-1/3"></div>
       </div>
 
+      {/* Shopping Bag */}
+      <div className="absolute top-1 right-6 z-100">
+        <ChartIcon itemCount={3} />
+      </div>
+
       {/* Product Info*/}
-      <div className="absolute top-[28%] right-[6%] w-[290px]">
+      <div className="absolute top-[25%] right-[6%] w-[290px]">
         <h1 className="font-medium text-xl"> Our Product are carefully formulated with all nature ingredients , free from hazardous chemicals and made to highest standarts</h1>
       </div>
 
       {/* Tag Porduct */}
       <div className="absolute top-[55%] left-[22%] z-100 flex">
-        <TagProductLeft />
+        <TagProductLeft text="Affordable Price" />
       </div>
       <div className="absolute top-[30%] left-[40%] z-100 flex">
-        <TagProductRight />
+        <TagProductRight text="Nature Enlightens" />
       </div>
       <div className="absolute top-[46%] left-[62%] z-100 flex">
-        <TagProductRight />
+        <TagProductRight text="Mercury Free" />
       </div>
       <div className="absolute top-[67%] left-[58%] z-100 flex">
-        <TagProductRight />
+        <TagProductRight text="Premium Ingredients" />
       </div>
 
       {/* Product Info */}
