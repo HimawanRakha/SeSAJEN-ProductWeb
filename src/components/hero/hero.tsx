@@ -2,6 +2,8 @@ import { Button } from "../ui/button";
 import Image from "next/image";
 import { ShoppingBag } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import TagProductLeft from "./tagproductl";
+import TagProductRight from "./tagproductr";
 
 export default function Hero() {
   return (
@@ -24,6 +26,25 @@ export default function Hero() {
         <div className="w-1/3"></div>
       </div>
 
+      {/* Product Info*/}
+      <div className="absolute top-[28%] right-[6%] w-[290px]">
+        <h1 className="font-medium text-xl"> Our Product are carefully formulated with all nature ingredients , free from hazardous chemicals and made to highest standarts</h1>
+      </div>
+
+      {/* Tag Porduct */}
+      <div className="absolute top-[55%] left-[22%] z-100 flex">
+        <TagProductLeft />
+      </div>
+      <div className="absolute top-[30%] left-[40%] z-100 flex">
+        <TagProductRight />
+      </div>
+      <div className="absolute top-[46%] left-[62%] z-100 flex">
+        <TagProductRight />
+      </div>
+      <div className="absolute top-[67%] left-[58%] z-100 flex">
+        <TagProductRight />
+      </div>
+
       {/* Product Info */}
       <div className="absolute top-[30%] left-[4%]">
         <h1 className="font-extrabold text-5xl">SeSAJEN : </h1>
@@ -33,19 +54,20 @@ export default function Hero() {
       </div>
 
       {/* Product Carousel */}
-      <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        <Carousel className="w-[500px]">
+      <div className="absolute left-1/2 top-[55%] transform -translate-x-1/2 -translate-y-1/2">
+        {/* <Carousel className="w-[500px]">
           <CarouselContent>
             <CarouselItem className="flex justify-center items-center">
               <Image src="/image 1.png" width={500} height={500} alt="product" />
             </CarouselItem>
             <CarouselItem className="flex justify-center items-center">
-              <Image src="/image 1.png" width={500} height={500} alt="product" />
+              <Image src="/kemasan.png" width={500} height={500} alt="product" />
             </CarouselItem>
           </CarouselContent>
           <CarouselPrevious className="left-2 bg-[#34333A] text-white" />
           <CarouselNext className="right-2 bg-[#34333A] text-white" />
-        </Carousel>
+        </Carousel> */}
+        <Image src="/image 1.png" width={800} height={800} alt="product" />
       </div>
 
       {/* Product Title */}
