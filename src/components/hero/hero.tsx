@@ -4,8 +4,10 @@ import { ShoppingBag } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import TagProductLeft from "./tagproductl";
 import TagProductRight from "./tagproductr";
-import { ShoppingCart } from "lucide-react";
+import Link from "next/link";
+
 import ChartIcon from "./charticon";
+import { MoveRight } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -58,6 +60,9 @@ export default function Hero() {
         <h1 className="font-extrabold text-3xl">BodyScrub Natural Exfolian</h1>
         <p className="mt-3 text-lg">250 ml</p>
         <h1 className="font-extrabold text-6xl mt-4">Rp.22.000</h1>
+        <Link href="/learn-more" className="flex items-center gap-2 font-extrabold text-2xl mt-8 underline">
+          Learn More <MoveRight />
+        </Link>
       </div>
 
       {/* Product Carousel */}
