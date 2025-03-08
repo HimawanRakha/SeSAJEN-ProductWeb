@@ -8,7 +8,7 @@ export const categoriesreview: CardReviewChildProps[] = [
   },
   {
     name: "nabila12xxxx@gmail.com",
-    description: "“Never Thought before Lumajang vulcanic Sand can be body scrub, amaze!”",
+    description: "“Never Thought before Lumajang vulcanic Sand can be body scrub!”",
     rating: 5,
   },
   {
